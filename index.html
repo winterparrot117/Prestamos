@@ -1,1 +1,46 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./css/estilos.css" rel="stylesheet">
+</head>
+<body class="bg-principal-pagina">
+    <nav class="py-8 border-2 border-borde-pagina ">
+        <div class="flex w-9/10  mx-auto justify-between">
+            <a href="#" class="relative z-10">
+                <img src="./assets/adobe.svg" class="w-32">
+            </a>
+            <label class="relative z-10 size-8  cursor-pointer transition-all peer/label
+             bg-(image:--icono-menu-cerrado) bg-cover has-checked:bg-(image:--icono-menu-abierto)
+             md:hidden
+            ">
+                <input type="checkbox" class="hidden">
+            </label>
+            <ul class="text-white  absolute inset-0 flex flex-col gap-8 justify-center items-center -translate-y-full peer-has-checked/label:translate-0 transition-transform
+            md:static md:translate-0 md:flex-row
+            ">
+                <li>
+                    <a href="#">Acerca de</a>
+                </li>
+                 <li>
+                    <a href="#" class="bg-button text-principal-pagina py-4 px-6 rounded-full">Ingresa al curso</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="bg-(image:--hero-image) bg-center bg-cover bg-no-repeat
+    text-white text-center p-8 my-15 w-9/10 mx-auto rounded-3xl min-h-130
+    flex flex-col gap-4 justify-center items-center
+    md:text-left md:justify-end md:items-start md:pb-20
+    ">
+        <h1 class="text-4xl font-bold md:text-5xl">Domina CSS desde Cero </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum fugiat aperiam aut error. Saepe illum cum rem magni voluptatibus. Deserunt esse ea voluptatem dolores atque beatae animi reiciendis omnis explicabo.</p>
+        <a href="#" class="
+        bg-button text-principal-pagina py-4 px-6 rounded-full font-bold
+        ">Inscribete  ahora</a>
+    </section>
+</body>
+</html>
